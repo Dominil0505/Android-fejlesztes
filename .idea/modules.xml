@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Currency_exchanger.iml" filepath="$PROJECT_DIR$/.idea/modules/Currency_exchanger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Currency_exchanger.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

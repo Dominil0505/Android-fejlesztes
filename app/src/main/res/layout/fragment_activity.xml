@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1B4B"
+    tools:context=".ActivityFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:autoText="false"
+        android:fontFamily="@font/aclonica"
+        android:text="Currency exchanger"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/currency1EditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:autoText="false"
+        android:autofillHints=""
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/currency1Spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_spinner"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/currency1EditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currency1EditText"
+        app:layout_constraintTop_toTopOf="@+id/currency1EditText"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Spinner
+        android:id="@+id/currency2Spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/custom_spinner"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/resultTextView"
+        app:layout_constraintEnd_toEndOf="@+id/currency1Spinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/currency1Spinner"
+        app:layout_constraintTop_toTopOf="@+id/resultTextView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:drawableLeft="@drawable/currency_icon"
+        android:text="Exchange"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currency1Spinner" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center_vertical"
+        android:text="Result"
+        android:fontFamily="@font/aldrich"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/currency1EditText"
+        app:layout_constraintStart_toStartOf="@+id/currency1EditText"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/copyButton"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#0890B3"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="COPY"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:backgroundTint="#0890B3"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="SAVE"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/resultTextView"
+        app:layout_constraintStart_toEndOf="@+id/copyButton"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/saveEditText"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custom_edittext"
+        android:ems="10"
+        android:enabled="false"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/currency2Spinner"
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/copyButton"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/saveTextView"
+        android:layout_width="0dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_edittext"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/currency2Spinner"
+        app:layout_constraintStart_toStartOf="@+id/resultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/saveEditText" />
+
+    <Button
+        android:id="@+id/reminderButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0890B3"
+        android:enabled="false"
+        android:text="Add reminder"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/saveTextView"
+        app:layout_constraintStart_toStartOf="@+id/saveTextView"
+        app:layout_constraintTop_toBottomOf="@+id/saveTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
